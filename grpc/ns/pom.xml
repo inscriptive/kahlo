@@ -10,21 +10,29 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kahlo-grpc-shared</artifactId>
+    <artifactId>grpc-ns</artifactId>
 
     <dependencies>
         <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.immutables</groupId>
+            <artifactId>value</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.immutables</groupId>
+            <artifactId>value-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.inscriptive.kahlo</groupId>
-            <artifactId>kahlo-logging</artifactId>
+            <artifactId>kahlo-injection</artifactId>
             <version>0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-stub</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-protobuf</artifactId>
         </dependency>
     </dependencies>
 

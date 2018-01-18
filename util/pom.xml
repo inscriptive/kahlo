@@ -6,25 +6,23 @@
         <artifactId>kahlo-parent</artifactId>
         <groupId>com.inscriptive.kahlo</groupId>
         <version>0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kahlo-grpc-shared</artifactId>
+    <artifactId>kahlo-util</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.inscriptive.kahlo</groupId>
-            <artifactId>kahlo-logging</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <groupId>org.immutables</groupId>
+            <artifactId>value</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-stub</artifactId>
+            <groupId>org.immutables</groupId>
+            <artifactId>value-processor</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-protobuf</artifactId>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
 

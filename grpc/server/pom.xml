@@ -10,22 +10,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kahlo-grpc-shared</artifactId>
-
+    <artifactId>kahlo-grpc-server</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.inscriptive.kahlo</groupId>
-            <artifactId>kahlo-logging</artifactId>
+            <artifactId>kahlo-injection</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-stub</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-protobuf</artifactId>
+            <groupId>com.inscriptive.kahlo</groupId>
+            <artifactId>kahlo-util</artifactId>
+            <version>0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 
 </project>

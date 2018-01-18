@@ -8,11 +8,13 @@
         <grpc.version>1.8.0</grpc.version>
         <guava.version>20.0</guava.version>
         <guice.version>4.0</guice.version>
+        <immutables.version>2.4.6</immutables.version>
         <log4j.version>2.5</log4j.version>
         <slf4j.version>1.7.9</slf4j.version>
+        <snakeyaml.version>1.18</snakeyaml.version>
     </properties>
 
-    <groupId>com.inscriptive</groupId>
+    <groupId>com.inscriptive.kahlo</groupId>
     <artifactId>kahlo-parent</artifactId>
     <packaging>pom</packaging>
     <version>0.1-SNAPSHOT</version>
@@ -22,6 +24,9 @@
         <module>logging</module>
         <module>grpc/shared</module>
         <module>grpc/client</module>
+        <module>grpc/ns</module>
+        <module>grpc/server</module>
+        <module>util</module>
     </modules>
 
     <dependencyManagement>
@@ -60,6 +65,26 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.immutables</groupId>
+                <artifactId>value</artifactId>
+                <version>${immutables.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.immutables</groupId>
+                <artifactId>value-processor</artifactId>
+                <version>${immutables.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.immutables</groupId>
+                <artifactId>value-annotations</artifactId>
+                <version>${immutables.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
@@ -104,6 +129,13 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.immutables</groupId>
+                            <artifactId>value-processor</artifactId>
+                            <version>${immutables.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
         </plugins>

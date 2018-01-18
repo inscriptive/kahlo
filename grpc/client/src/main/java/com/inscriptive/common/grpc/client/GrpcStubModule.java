@@ -5,7 +5,7 @@ import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
 import com.google.inject.name.Names;
 import com.google.inject.util.Types;
-import com.inscriptive.common.lifecycle.Resource;
+import com.inscriptive.kahlo.lifecycle.Resource;
 import io.grpc.Channel;
 
 import javax.inject.Provider;
